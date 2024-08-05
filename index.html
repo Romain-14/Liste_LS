@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+       
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+        <link rel="stylesheet" href="style.css" />
+
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<h1>Liste de course</h1>
+		</header>
+		<main>
+			<div>
+				<form>
+					<input
+						type="text"
+						name="item"
+						id="itemInput"
+						placeholder="Entrer un produit"
+					/>
+					<button
+						title="Ajouter le produit"
+						id="addItem"
+						tabindex="0"
+					>
+						<i class="fa-solid fa-plus"></i>
+					</button>
+				</form>
+
+				<ul id="itemList"></ul>
+			</div>
+
+            <div class="divider-vertical"></div>
+            
+			<aside>
+				<button title="Sauvegarder la liste" id="setList" tabindex="0">
+					<i class="fa-solid fa-upload"></i>
+				</button>
+
+				<button title="Supprimer la liste" id="deleteList" tabindex="0">
+					<i class="fa-solid fa-calendar-xmark"></i>
+				</button>
+			</aside>
+		</main>
+
+		<script src="Class/Program.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>

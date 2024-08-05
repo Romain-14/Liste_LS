@@ -1,0 +1,95 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 1.6rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+button {
+	cursor: pointer;
+	all: unset;
+	border: 2px solid #333;
+	border-radius: 50%;
+	padding: 0.5rem;
+	width: 3rem;
+	height: 3rem;
+	text-align: center;
+}
+
+button:focus {
+	outline: 4px solid green;
+}
+
+i {
+	font-size: 2rem;
+	vertical-align: middle;
+}
+
+#addItem {
+	border-color: green;
+}
+
+.fa-plus {
+	color: green;
+}
+
+#setList {
+	border-color: royalblue;
+}
+
+.fa-upload {
+	color: royalblue;
+}
+
+#deleteList {
+	border-color: red;
+	background-color: rgb(225, 222, 222);
+	opacity: 0.7;
+}
+
+#itemInput {
+	height: 3rem;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	font-size: 1.8rem;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+    margin: auto;
+    width: 90%;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.divider-vertical {
+    width: 1px;
+    background-color: #333;
+    margin: 0 1rem;
+}
